@@ -66,7 +66,6 @@ export default function PelangganForm({
 							});
 						}
 						//TODO HANDLING ERROR
-						console.log(response.data.errors);
 					}
 				})
 				.finally(() => setLoading(false));
@@ -89,7 +88,6 @@ export default function PelangganForm({
 							});
 						}
 						//TODO HANDLING ERROR
-						console.log(response.data.errors);
 					}
 				})
 				.finally(() => setLoading(false));

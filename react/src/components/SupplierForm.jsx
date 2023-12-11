@@ -67,7 +67,6 @@ export default function SupplierForm({
 							});
 						}
 						//TODO HANDLING ERROR
-						console.log(response.data.errors);
 					}
 				})
 				.finally(() => setLoading(false));
@@ -90,7 +89,6 @@ export default function SupplierForm({
 							});
 						}
 						//TODO HANDLING ERROR
-						console.log(response.data.errors);
 					}
 				})
 				.finally(() => setLoading(false));

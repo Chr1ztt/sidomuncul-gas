@@ -93,7 +93,6 @@ export default function TransaksiForm() {
 		axiosClient
 			.post(`/transaction`, payload)
 			.then(({ data }) => {
-				console.log(data);
 				setNotification("Transaki berhasil dibuat");
 				navigate(-1);
 			})

@@ -27,20 +27,10 @@ export default function IncomeAnalysis({ datas, labels }) {
 		},
 	};
 
-	useEffect(() => {
-		// console.log(cfg.data);
-		console.log("INCOMES ADALAH SEBAGAI BERIKUT");
-		console.log(cfg.data);
-		// chart.data = cfg.data;
-		// chart.update();
-	}, [labels]);
-
 	const getIncomes = () => {
 		axiosClient
 			.get(`/analysis`)
 			.then(({ data }) => {
-				console.log("DATA ADALAH SEBAGAI BERIKUT");
-				console.log(data.data);
 				setIncomes(data.data.map((d) => d.income));
 				setIncomeLabels(data.data.map((d) => d.created_at));
 			})
@@ -60,11 +50,9 @@ export default function IncomeAnalysis({ datas, labels }) {
 			let chartStatus = Chart.getChart("incomeChart");
 			if (chartStatus) {
 				chartStatus.destroy();
-				console.log(chart);
 			}
 
 			chart = new Chart("incomeChart", cfg);
-			// console.log(chart);
 			return () => {
 				chart.destroy();
 			};

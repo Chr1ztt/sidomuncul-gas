@@ -79,7 +79,7 @@ export default function StokBarang() {
 				// console.log(data);
 			})
 			.catch(() => {
-				console.log("ada error di getGases");
+				console.log("ada kesalahan");
 			})
 			.finally(() => setLoadingGas(false));
 	};

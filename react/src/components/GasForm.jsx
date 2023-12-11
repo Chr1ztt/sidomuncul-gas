@@ -61,7 +61,6 @@ export default function GasForm({ closeModal, detail, setDetail, getGases }) {
 							});
 						}
 						//TODO HANDLING ERROR
-						console.log(response.data.errors);
 					}
 				})
 				.finally(() => setLoading(false));
@@ -84,7 +83,6 @@ export default function GasForm({ closeModal, detail, setDetail, getGases }) {
 							});
 						}
 						//TODO HANDLING ERROR
-						console.log(response.data.errors);
 					}
 				})
 				.finally(() => setLoading(false));

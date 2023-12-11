@@ -51,7 +51,6 @@ export default function SideBar() {
 	//     },
 	// }
 	useEffect(() => {
-		// console.log  (isUnderMd);
 		if (isUnderMd) {
 			setIsOpen(false);
 		} else {
@@ -70,7 +69,6 @@ export default function SideBar() {
 	};
 
 	useEffect(() => {
-		// console.log(pathname);
 		if (pathname.includes("/gudang/dashboard")) {
 			setMenuName("Dashboard");
 		} else if (pathname.includes("/gudang/analisis")) {

@@ -83,7 +83,6 @@ export default function SupplyForm({
 	};
 
 	const onSubmit = (e) => {
-		console.log(tube);
 		e.preventDefault();
 		setLoading(true);
 		const supplyPayload = {
@@ -128,12 +127,10 @@ export default function SupplyForm({
 							});
 						}
 						//TODO HANDLING ERROR
-						console.log(response.data.errors);
 					}
 				})
 				.finally(() => setLoading(false));
 		} else {
-			// console.log(tube);
 			axiosClient
 				.post("/supply", supplyPayload)
 				.then(() => {
@@ -150,7 +147,6 @@ export default function SupplyForm({
 							}));
 						}
 						//TODO HANDLING ERROR
-						console.log(response.data.errors);
 					}
 				})
 				.finally(() => setLoading(false));
@@ -191,7 +187,6 @@ export default function SupplyForm({
 			.finally(() => setLoadingGas(false));
 	}, []);
 
-	// useEffect(() => console.log(gases), gases);
 
 	return (
 		<Backdrop onClick={(ev) => closeModal()}>

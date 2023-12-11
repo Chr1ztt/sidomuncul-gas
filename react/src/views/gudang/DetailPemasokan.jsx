@@ -19,9 +19,6 @@ export default function DetailPemasokan() {
 			style: "currency",
 			currency: "IDR",
 		}).format(value);
-	useEffect(() => {
-		console.log(supply);
-	}, []);
 
 	const closeDeleteModal = () => {
 		setDeleteModal(false);

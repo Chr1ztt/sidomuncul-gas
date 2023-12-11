@@ -127,7 +127,6 @@ export default function Analisis() {
 			.get(`/analysis`)
 			.then(({ data }) => {
 				// let sold = [...data.most_sold];
-				// console.log(sold);
 				setIncome(data.result.map((r) => r.income));
 				setProductSold(data.result.map((r) => r.product_sold));
 				setProductEntry(data.result.map((r) => r.product_entry));

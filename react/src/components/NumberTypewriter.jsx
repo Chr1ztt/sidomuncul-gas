@@ -8,7 +8,6 @@ export default function NumberTypewriter({target}) {
   useEffect(() => {
     const intervalId = setInterval(() => {
       setNumber(prevNumber => {
-        // console.log(prevNumber);
         if(prevNumber<target){
           const distance = target-prevNumber;
           const speed = Math.max(1, Math.ceil(distance/3));

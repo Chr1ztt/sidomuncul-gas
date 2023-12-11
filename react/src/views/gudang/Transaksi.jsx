@@ -62,9 +62,7 @@ export default function Transaksi() {
 
 	const handlePaginationClick = (ev) => {
 		const halaman = ev.selected + 1;
-		console.log(ev.selected);
 		setCurrentPage(halaman);
-		console.log(currentPage);
 		// getSuppliers();
 	};
 

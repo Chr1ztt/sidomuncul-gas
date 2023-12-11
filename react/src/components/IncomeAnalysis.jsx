@@ -125,29 +125,6 @@ export default function IncomeAnalysis({
 		},
 	};
 
-	// useEffect(() => {
-	// 	// console.log(cfg.data);
-	// 	console.log("INCOMES ADALAH SEBAGAI BERIKUT");
-	// 	console.log(cfg.data);
-	// 	// chart.data = cfg.data;
-	// 	// chart.update();
-	// }, [labels]);
-
-	// const getIncomes = () => {
-	// 	axiosClient
-	// 		.get(`/analysis`)
-	// 		.then(({ data }) => {
-	// 			console.log("DATA ADALAH SEBAGAI BERIKUT");
-	// 			console.log(data.data);
-	// 			setIncomes(data.data.map((d) => d.income));
-	// 			setIncomeLabels(data.data.map((d) => d.created));
-	// 		})
-	// 		.catch((err) => console.log(err))
-	// 		.finally(() => setLoading(false));
-	// };
-	// useEffect(() => {
-	// 	getIncomes();
-	// }, []);
 
 	function IncomeChart() {
 		useEffect(() => {
@@ -158,11 +135,9 @@ export default function IncomeAnalysis({
 			let chartStatus = ChartJS.getChart("incomeChart");
 			if (chartStatus) {
 				chartStatus.destroy();
-				console.log(chart);
 			}
 
 			chart = new ChartJS("incomeChart", cfg);
-			// console.log(chart);
 			return () => {
 				chart.destroy();
 			};

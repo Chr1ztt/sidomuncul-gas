@@ -82,7 +82,6 @@ export default function TabungForm({
 							});
 						}
 						//TODO HANDLING ERROR
-						console.log(response.data.errors);
 					}
 				})
 				.finally(() => setLoading(false));
@@ -105,7 +104,6 @@ export default function TabungForm({
 							});
 						}
 						//TODO HANDLING ERROR
-						console.log(response.data.errors);
 					}
 				})
 				.finally(() => setLoading(false));
@@ -121,7 +119,6 @@ export default function TabungForm({
 			.catch((err) => console.log(err));
 	}, []);
 
-	useEffect(() => console.log(gases), gases);
 
 	return (
 		<Backdrop onClick={(ev) => closeModal()}>

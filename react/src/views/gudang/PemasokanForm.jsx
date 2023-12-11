@@ -90,7 +90,6 @@ export default function PemasokanForm() {
 		axiosClient
 			.post(`/supply`, payload)
 			.then(({ data }) => {
-				console.log(data);
 				setNotification("Pemasokan berhasil dibuat");
 				navigate(-1);
 			})

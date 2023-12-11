@@ -105,7 +105,6 @@ export default function Gas() {
 			.catch(() => {
 				setLoading(false);
 			});
-		// .finally(()=>console.log(gases));
 	};
 
 	const onEditClick = (g) => {
@@ -133,9 +132,7 @@ export default function Gas() {
 
 	const handlePaginationClick = (ev) => {
 		const halaman = ev.selected + 1;
-		console.log(ev.selected);
 		setCurrentPage(halaman);
-		console.log(currentPage);
 		// getGases();
 	};
 

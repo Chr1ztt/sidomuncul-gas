@@ -129,9 +129,7 @@ export default function Tabung() {
 
 	const handlePaginationClick = (ev) => {
 		const halaman = ev.selected + 1;
-		console.log(ev.selected);
 		setCurrentPage(halaman);
-		console.log(currentPage);
 		// getTubes();
 	};
 
