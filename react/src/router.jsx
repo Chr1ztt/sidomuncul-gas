@@ -18,7 +18,6 @@ import StokBarang from "./views/gudang/StokBarang";
 import Pelanggan from "./views/gudang/Pelanggan";
 import Supplier from "./views/gudang/Supplier";
 import { AnimatePresence } from "framer-motion";
-import DefaultLayoutRoutes from "./DefRoutes";
 import NotFound from "./views/NotFound";
 import LandingPage from "./views/LandingPage";
 import Gas from "./views/gudang/Gas";
