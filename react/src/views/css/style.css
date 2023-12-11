@@ -1,0 +1,115 @@
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.navbar{
+    background: rgba(167,211,151, 1); 
+}
+
+.navbar:hover{
+    cursor: pointer;
+    color: #3c6532;
+}
+
+#home{
+    background: linear-gradient(to left bottom, #A7D397 0%, #fff 100%);
+    height: 100%;
+    margin-top: 5%;
+}
+
+.logo {
+    width: 500px;
+    height: 650px;
+    margin-left: 3%;
+}
+
+.lo {
+    margin-top: 10%;
+}
+.lo h1{
+    font-size: 60px;
+}
+
+.btn{
+    border-radius: 0;
+    padding: 10px 30px;
+}
+.btn-brand{
+    color: #fff;
+    font-weight: 500;
+    font: bold;
+    border-color: #70BD5D;
+    background-color: #70BD5D;
+    border-radius: 12px;
+    border-width: 3px;
+}
+.btn-brand:hover{
+    border-color: #3c6532;
+    background-color: #3c6532;
+    color: #fff;
+}
+
+#service img{
+    width: 600px;
+    height: 644px;
+}
+
+#service b{
+    font-size: 70px;
+}
+
+.list {
+    margin-left: 6%;
+    font-size: 40px;
+}
+
+#service p{
+    font-size: 20px;
+    margin-left: 6%;
+}
+
+#Gas {
+    background: linear-gradient(to left bottom, #A7D397 0%, #fff 100%);
+}
+
+#Gas p{
+    font-size: 35px;
+    margin-bottom: 10%;
+}
+
+#find{
+    background: linear-gradient(rgba(167,211,151, 0.2), #70BD5D), url(../img/unsplash_lhuWFe3jfSs.svg);
+}
+
+#find img{
+    margin-top: 10%;
+    width: 600px;
+    height: 581px;
+}
+
+#find h3{
+    margin-left: 10%;
+    font-size: 40px;
+}
+
+#find p{
+    font-size: 35px;
+    margin-top: 5%;
+    margin-left: 10%;
+}
+
+.n-1{
+    margin-left: -8%;
+}
+
+#partner .container{
+    margin-left: 12%;
+    margin-bottom: 3%;
+}
+
+#footer{
+    background: linear-gradient(to bottom, #A7D397 0%, #fff 100%);
+}
